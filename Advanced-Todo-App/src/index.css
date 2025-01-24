@@ -1,0 +1,80 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Flexbox for forms and buttons */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive layout for Task Manager */
+.task-manager {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.task-list select {
+  margin-left: 1rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .task-manager {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .task-manager {
+    grid-template-columns: 2fr 1fr;
+  }
+}
